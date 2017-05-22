@@ -2,56 +2,48 @@
 
 <html lang="eng">
 
-    <head>
+<head>
     
-        <meta charset="UTF-8">
-
-        <meta name="viewport" content="width= device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width= device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <title> GitHub-Introduction</title>
 <link rel="stylesheet" href="Style.css">
 <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='sylesheet' type='text/css'>
 
 </head>
 
-<body bgcolor:#f0f0f5; >
+<body bgcolor:#e0e0eb;>
 
  <h1> Introduction to Website Deployment with GitHub webpages.</h1>
 
     
-    <p>
-  We have several ways to deploy a website to the public internet.
+  <p> We have several ways to deploy a website to the public internet.
   In order to explain how to apply this processes we will use GitHub Pages to deploy a website.
   Github Pages is a service offered by Github Pages which are webpages that are hosted and published through Github. </p>
 
-<br/>
     
    <h2> GitHub Deployment Architecture</h2>
     
    <img src="https://www.imageupload.co.uk/images/2017/05/22/Arquitectura.png" border="0">
   
-  
-    <br/>
-  
-    <ul>
-        
+   <br/>
+   
+       
   <p>-Are you ready to create your GitHub Account ? </p>
   
   <b>-Great!! Lets do it!</b>
   
    <p> Click the next link: https://github.com/ and start to create your GitHub Account. </p>
         
-  <p>
-  -So...Whats the next ? <br/>
-  Well in order to publish a site  by using GitHub Pages, we'll need to create a repository on GitHub.<br/>
-  What's a GitHub repository? <br/>
-  A GitHub repository is an online, central storage place where we can store files and all the versions of those files. We'll Use the repository   created to store the contents of our website.
-  <br/>
-   <i>Note: It´s pretty important  that your repository name use the GitHubPages naming convention. The same in order to publish it properly.
+  <p> -So...Whats the next ? <br/> Well in order to publish a site  by using GitHub Pages, we'll need to create a repository on GitHub.<br/>
+  What's a GitHub repository? <br/> A GitHub repository is an online, central storage place where we can store files and all the versions of those files. We'll Use the repository   created to store the contents of our website.
+  <br/> <i>Note: It´s pretty important  that your repository name use the GitHubPages naming convention. The same in order to publish it properly.
   GitHub Naming convention: user-name.github.io</i>
-   
-   <i>Note: The Owner field contain the user-name information  which will be repeated on the Repository name in order to follow the GitHub naming convention.
+   <br/>
+ <i>Note: The Owner field contain the user-name information  which will be repeated on the Repository name in order to follow the GitHub naming convention.
   Once we have created the repository .github.io , we could  see it displayed on the webpages  as below:
    </i>
+      
 </p>
 
 <b>
@@ -76,55 +68,49 @@
   <p>By using Git we will push (upload) the contents of the site´s directory to the new repository. <br/>
   To do so, we´ll initialize a Git repository in your sites directory. </p>
 
-        <ul>
-            <li>
-  ⦁	Open the terminal and use cd command to navigate to the sites directory.</li>
-            <li>
-  ⦁	Initialize a Git repository with the git init command.</li>
-            <li>
-  ⦁	Specify to Git where the repository will store your content site(The one you created on GitHub earlier). In order to specify the  repository using Git is required to add the  remote and label it as the 
-                origin.</li>
-            <li>
-  ⦁	The remote is the URL of the repository that will store the site´s contents.</li>
-            <li>
-  ⦁	The Origin is an alias for the remote. The before mention is in order to  avoide to having all the time type the lengthy remote URL over and over again, you can simply refer to it as origin later on.
-</li>
+    <ul>
+    <li> ⦁	Open the terminal and use cd command to navigate to the sites directory.</li>
+    <li> ⦁	Initialize a Git repository with the git init command.</li>
+    <li> ⦁	Specify to Git where the repository will store your content site(The one you created on GitHub earlier). In order to specify the  repository using Git is required to add the  remote and label it as the 
+                                                           origin.</li>
+    <li> ⦁	The remote is the URL of the repository that will store the site´s contents.</li>
+    <li> ⦁	The Origin is an alias for the remote. The before mention is in order to  avoide to having all the time type the lengthy remote URL over and over again, you can simply refer to it as origin later on.</li>
   </ul>
-            <p>In the terminal , you can add the remote with the next command:</p>
+           
+   <p>In the terminal , you can add the remote with the next command:</p>
 
   <b>git remote add origin https://github.com/your-user-name/your-user-name.github.io.git </b>
             
-            <p>
+  <p>
   the URL  https://github.com/your-user-name/your-user-name.github.io.git  Is the  remote URL that refers to the repository we have created on GitHub earlier.
 <br/>
   ⦁	In the terminal, add the remote that points  to the repository  we created earlier </p>
 
  <p> Example: </p>
             
-  git remote rm origin
+ <b> git remote rm origin </b>
             
-  After specify the remote  we will check that it has been added properly with the next command: git remote -v   (This command will list all the Git remotes and their corresponding URLS).
+  <p>After specify the remote  we will check that it has been added properly with the next command: git remote -v   (This command will list all the Git remotes and their corresponding URLS).</p>
   <br/>
-  After complete the mentioned steps is required to know exactly which files should be pushed to your repository.
-  In case we would like to push all the site´s content to the repository . We will do the following thing:
-  <br/>
-  1.- Add all your site content to the staging area by using the git add command. <br/>
-  2.- Save your changes by usin the commit  -m "Save my work"   command. <br/>
+  After complete the mentioned steps is required to know exactly which files should be pushed to your repository.<br/>
+  In case we would like to push all the site´s content to the repository . We will do the following thing: <br/>
+  
+      <ul>
+          <li>1.- Add all your site content to the staging area by using the git add command. </li>
+          <li>2.- Save your changes by usin the commit  -m "Save my work"   command. </li>
+       <ul>
 
-  Great, Now lets go to deploy our site! <br/>
+  <b>Great, Now lets go to deploy our site! </b>
 
-  Starting deployment by typing the git push -u origin master command.
+ <i> Starting deployment by typing the git push -u origin master command.</i>
 
-  <b> Important: 
-  Remember that on this deploy step the authentification credentials will be requested.</b>
-  <br/>
+  <b> Important: Remember that on this deploy step the authentification credentials will be requested.</b>
+  
+  <h2> II.- Front end option to upload  a site on GitHub (This option is generally used when we create files by using HTML /
+                                                          CSS /JS languages  and editors like Notepad++  or Atoms). </h2>
 
-  <p>
-  II.- Front end option to upload  a site on GitHub (This option is generally used when we create files by using HTML /
-                                                          CSS /JS languages  and editors like Notepad++  or Atoms).
-<br/>
-  Go to your GitHub webpage and access your repository github.io.
-<br/>
+<b>  Go to your GitHub webpage and access your repository github.io.</b>
+
     
   -Once you are here you can start  by  uploading or  creating files on your master branch.
 
@@ -134,25 +120,21 @@
   Everything you start on your master branch and you will commmit will be reflected on your URL.  Due to the same it will be the main of the branches.
   <br/>Is recommendable to use a gh-pages branch to add the new changes and apply the new version over thoses in order to avoid to affect the master branch and be able to apply the rollbacks.
   <br/>After  commit  any  change on our master branch we have published our site on  the public Internet.</b>
-  </p>
+  
   <br/>
   
-      <p>
-   So, Lets remember what is the information that we saw on this introductory GitHub document: </p>
+      <p> So, Lets remember what is the information that we saw on this introductory GitHub document: </p>
 
         <ul>
-            <li>
-  ⦁	We had an overview about what GitHub is and for what could we use it.</li>
-            <li>
-  ⦁	We saw an overview about the Github webpages structure such as  Account, Repositories and Master Branche.</li>
-            <li>
-  ⦁	We learned that there are two options to  deploy a site on the public internet.</li>
-            <li>
-  ⦁	We learned that we have two options to deployment  a site  by using GitHub . One of these is the back end option (by cmd commands) which usually  is applied for Ruby and Jekyll languages,  and the  Front End option  ( webpages deployment) used for  the  creation /uploading  of files basically created on languages as html /css/JS/php etc...). <br/>
+            <li> ⦁	We had an overview about what GitHub is and for what could we use it.</li>
+            <li> ⦁	We saw an overview about the Github webpages structure such as  Account, Repositories and Master Branche.</li>
+            <li> ⦁	We learned that there are two options to  deploy a site on the public internet.</li>
+            <li> ⦁	We learned that we have two options to deployment  a site  by using GitHub . One of these is the back end option (by cmd commands) which usually  is applied for Ruby and Jekyll languages,  and the  Front End option  ( webpages deployment) used for  the  creation /uploading  of files basically created on languages as html /css/JS/php etc...). <br/>
 </li>
             
-            </ul>
-        <p>
+        </ul>
+        
+           <p>
   Hope this Github Introduction could be helpfull for you to understand more about the deployment option by using it.
   Eventually more detailed information and Github webpages  courses will be published on this website as well as a how to manual for some tricks and or solutions for issues while deploying or configurating GitHub.<br/>
   My best wishes <br/>
