@@ -54,17 +54,17 @@
   properly.<br/>
   <br/>
       
-    <img src="https://www.imageupload.co.uk/images/2017/05/23/newrepository.png" height="400" width="670"/> 
+    <img src="https://www.imageupload.co.uk/images/2017/05/23/newrepository.png" height="390" width="710"/> 
     <p>Fig1. Selection the new repository creation option.</p> <br/>
     
-    <img src="https://www.imageupload.co.uk/images/2017/05/23/newnameconvention.png" height="400" width="670"/>
+    <img src="https://www.imageupload.co.uk/images/2017/05/23/newnameconvention.png" height="390" width="710"/>
     <p>Fig2.Example of the github name convention. </p> <br/> 
           
  <b>Note II:</b> The Owner field contain the user-name information  which will be repeated on the Repository name in order to follow the GitHub naming convention.
   Once we have created the repository .github.io , we could  see it displayed on the webpages  as below:<br/>
     <br/>
         
-    <img src="https://www.imageupload.co.uk/images/2017/05/23/githubpagecreated.png" height="400" width="670"/> <br/>
+    <img src="https://www.imageupload.co.uk/images/2017/05/23/githubpagecreated.png" height="390" width="710"/> <br/>
     <p>Fig3.Githug page created.</p> <br/>
        
     
@@ -97,28 +97,32 @@
   <b>git remote add origin https://github.com/your-user-name/your-user-name.github.io.git </b>
             
   <p>
-  the URL  https://github.com/your-user-name/your-user-name.github.io.git  Is the  remote URL that refers to the repository we have created on GitHub earlier.<br/>
-  ⦁	In the terminal, add the remote that points to the repository  </p>
+  the URL <b> https://github.com/your-user-name/your-user-name.github.io.git </b> Is the  remote URL that refers
+  to the repository we have created on GitHub earlier.<br/>
+    
+  <p>Before continue is required to validate that we have added the remote properly and also  confirm which
+     files should be pushed in our repository with
+      the next commands: <br/>
+      
+      <b> git remote -v </b> <br/>
+      
+      Excelent!
+      
+      <p> Now we will add all our site content to the staging are by using the git add command and save the changes by
+    using the -m "Save my work" Instruction </p>
+      
+      <p>
+          
+  <b> Lets complete all those steps and deploy our site! </b>
 
-       
-            
- <p>After specify the remote  we will check that it has been added properly with the next command: git remote -v   
-  (This command will list all the Git remotes and their corresponding URLS).<br/>
-  After complete the mentioned steps is required to know exactly which files should be pushed to your repository.<br/>
-  In case we would like to push all the site´s content to the repository . We will do the following thing: <br/>
-  </p>
-      <ol>
-          <li> Add all your site content to the staging area by using the git add command. </li>
-          <li> Save your changes by usin the commit  -m "Save my work"   command. </li>
-       </ol>
-<p>
-  <b>Great, Now lets go to deploy our site! </b>
-
- <i> Starting deployment by typing the git push -u origin master command.</i>
+ <i> So... we will Start the  deployment by typing the git push -u origin master command.</i>
 
   <b> Important: Remember that on this deploy step the authentification credentials will be requested.</b>
   </p>
            
+    <p> Done?  </p>
+    
+    <p> Finally!!!! Congratulations!! You have deployed your first site by backend option!!!</p>
            <br/>
            
   
@@ -126,16 +130,22 @@
                                                           CSS /JS languages  and editors like Notepad++  or Atoms). </b> </h3>
 
  <p> <b>Go to your GitHub webpage and access your repository github.io.</b><br/>
- Once you are here you can start  by  uploading or  creating files on your master branch. <br/>
-
+ Once you are here you can start  by  uploading or  creating files on your master branch. 
+ <br/>
+ <img src="https://www.imageupload.co.uk/images/2017/05/23/masterbranch.png" height="350" width="689"/> <br/>
+  Fig4. Branches <br/>
+     
   <b>Note I: </b>
   Everything we start on our master branch and  that we'll commmit will be reflected on our URL. Due to the same this branch is consider like the 
-  main of the branches.<br/>
+  main of the branches.
+  <br/>
   
    Considering the above mentioned is recommended to use gh-pages branch to apply  changes or  new versions over those to avoid 
-   affecting the master branch and  also to be able to apply proper rollbacks. <br/>
+   affecting the master branch and  also to be able to apply proper rollbacks.
+   <br/>
   
-After commit  our master branch we will be  automatically publishing  our site changes on  the public Internet.</p> <br/>
+After commit  our master branch we will be  automatically publishing  our site changes on  the public Internet.</p> 
+   <br/>
       
   <p> <b>Note II: </b>
       
@@ -143,7 +153,8 @@ After commit  our master branch we will be  automatically publishing  our site c
  do two things, the first is to compare the new changes with the old version and the second thing is complete the  a proper 
  pull request authroization process to validate that new changes wont affect previous versions.
       
- </p>   <br/>   
+ </p>   
+  <br/>   
     
  <p> Now that we have covered the main topics, lets remember what is the relevant information that we  have to remember about this Introductory course: </p>
 
